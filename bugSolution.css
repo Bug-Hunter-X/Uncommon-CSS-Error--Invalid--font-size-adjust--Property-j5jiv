@@ -1,0 +1,11 @@
+The solution is to remove the `font-size-adjust` property and rely on alternative techniques to achieve the desired visual effects. For example, if the goal is to maintain a consistent x-height when the font changes, you might consider using a custom font or employing techniques that adjust font size and other properties in conjunction to maintain a desired visual balance.  Precise solutions depend on the specific design goals. Here is an example of how you might address the issue based on the desired outcome: If the goal was to control the x-height and you are using a variable font, you may need to utilize the 'font-variation-settings' property to control the optical size:
+
+```css
+div {
+  /* Remove font-size-adjust */
+  font-variation-settings: "opsz" 10;
+  /* Use other CSS properties to achieve desired visual effects */ 
+}
+```
+
+This revised code removes the invalid property and demonstrates other ways to potentially handle text scaling which should be explored depending on the exact visual requirements.
