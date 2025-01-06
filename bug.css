@@ -1,0 +1,7 @@
+The following CSS code snippet exhibits an unusual error: It uses an invalid property 'font-size-adjust'. This property is non-standard and not supported by most browsers.  It's meant to maintain the x-height of text when the font changes, but its lack of broad support renders it unreliable.
+
+```css
+div {
+  font-size-adjust: 0.5;
+}
+```
